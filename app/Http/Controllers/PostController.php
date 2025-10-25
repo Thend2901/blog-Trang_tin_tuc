@@ -18,4 +18,8 @@ class PostController extends Controller
         Post::create($fields);
         return redirect("/")->with('message','Bài viết đã được tạo thành công');
     }
+    public function(){
+
+    };
+
 }
