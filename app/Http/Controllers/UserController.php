@@ -26,7 +26,7 @@ class UserController extends Controller
         return redirect("/");
     }
     public function login(Request $request){
-        $fields = $request->validate([
+        $fields = $request->validate([  
             'login_email' => 'required',
             'login_password' => 'required'
         ]);
